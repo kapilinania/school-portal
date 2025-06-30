@@ -1,0 +1,271 @@
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+/* Default light mode styles */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: black;
+    color: white !important;
+}
+
+/* ------here dark mode and light mode css ------  */
+
+.header_fullscreen{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid #030303;
+    color: #000000;
+    background: 0 0;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+    font-size: 18px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header_fullscreen:hover{
+    border: 2px solid #030303;
+    color: #000000;
+}
+.time_left{
+    background-color: #f6f5f5;
+    color: rgb(0, 0, 0);
+    padding: 10px 18px 10px 18px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+}
+.head_con{
+    padding-top: 10px;
+}
+.examinfo_middle{
+    background-color: #f6f5f5;
+    color: black;
+    padding: 15px;
+}
+.examinfo_middle .flex-item{
+    padding-right: 50px;
+}
+.mark_point{
+    background-color: green;
+    color: white;
+    display: table;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+.main_question_section{
+    background-color: aliceblue;
+    border-bottom: 1px solid rgb(187, 185, 185);
+}
+
+.person_main_img{
+   border-radius: 8px;
+   width: 50px;
+   height: 50px;
+   border: 0px solid red;
+}
+.person_text{
+    padding-top: 8px;
+    margin-left: 20px;
+    border: 0px solid red;
+    font-size: 22px;
+}
+.questin_number{
+    border: 0px solid red;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.question_border{
+    border-bottom: 1px solid rgb(218, 215, 215);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    background-color: aliceblue;
+    padding: 10px; /* Add some padding to the container */
+}
+
+.grid-item {
+    background-color: #f8f7f7;
+    padding: 8px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px ;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect */
+}
+#cameraFeed {
+    width: 150px;
+    height:130px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    object-fit: cover;
+    border-radius:10px 0px 0px 0px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.examinfo_middle_sec{
+    color: black;
+    padding: 15px;
+    background-color: aliceblue;
+}
+.examinfo_middle_sec .flex-item{
+    padding-right: 50px;
+}
+.middle_question{
+    border: 0px solid red;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  .main_question{
+    font-size: 22px;
+  }
+  .main_question_container{
+    border: 0px solid red;
+    position:relative;
+    height:74vh;
+
+  }
+  .web2{
+   border:0px solid black;
+   min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .submit_text button{
+    margin-top: 10%;
+    margin-bottom: 9%;
+  }
+  .mark_point1{
+    background-color: green;
+    color: white;
+    display: table;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+  }
+  .mark_point2{
+    background-color: orange;
+    color: white;
+    display: table;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+  }
+  .mark_point3{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    display: table;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+  }
+.answer_sec{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+/* ------darkmode css is here------- */
+.dark-mode .header_fullscreen{
+    border: 1px solid #fffdfd;
+    color: #ffffff;
+
+}
+.dark-mode .time_left{
+    background-color: #070707;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(212, 211, 211, 0.2) 0px 2px 8px 0px;
+}
+.dark-mode .examinfo_middle{
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+}
+.dark-mode .grid-container{
+    background-color: #000000;
+    color: black;
+}
+.dark-mode .examinfo_middle_sec{
+    background-color: #000000;
+    color: white;
+
+}
+.dark-mode .middle_question{
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+    overflow: scroll;
+}
+.dark-mode .main_question_section{
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1700px) and (min-width: 900px)  {
+    body{
+        font-size: 17px;
+        font-family: sans-serif;
+        position: relative;
+        border: 0px solid red;
+
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(10%, 1fr)); /* Adjust the percentage as needed */
+        gap: 5px; /* Adjust gap for smaller screens */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+    .submit_text{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .middle_question {
+        border: 0px solid red;
+        background-color: aliceblue;
+        height: 100vh;
+    }
+    .submit_text button {
+        margin-top: 7%;
+        margin-bottom: 5px;
+    }
+
+}
+.heading_homepage {
+font-size:25px;
+font-family: myFirstFont;
+color:red;
+}
+
+.heading_examvista{
+  font-family: myFirstnt;
+font-size:50px;
+color:#247bbf;
+margin-bottom:0px;
+}
